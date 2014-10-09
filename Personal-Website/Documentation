@@ -1,0 +1,30 @@
+In "bubblebreaker.js", start function is used to create the game table and every
+essential tags. It contains two for loop to construct the table.
+
+Model-View-Control model is used in this game. It has a two dimensional array
+"database" to store the bubbles in the game table. It has 15 subarrays each
+representing every column and there are 8 elements in each of them representing
+every row in that column. 
+
+When a td tag is clicked (see line 72), it calls circle() function to find all 
+possible bubbles to be broken with respect to the selected one. Then pass the
+array of the IDs of td tags where those bubbles are to main_func() to decide
+waht to behave.
+
+Basically, it is a cycle, every time the player clicks on a bubble, it goes in
+following order: circle(), main_func() then two possibility: if game is over,
+jusr pop up a window to remind the player to enter his name; otherwise there are
+two possiblities: first is the user selects some new bubble, then if there are
+bubbles previously selected, set those bubbles' border to 0 and set the new set
+of bubbles' border to be visible and update the possible points to gain at the
+same time; if there is no bubble selected before, then just border the set of
+possible bubbles to be broken with respect to the selected one.
+
+The second case is that the user select ones that he selected last time trying
+to break them. Then first check if the bubble is along (no bubbles with same
+color around), if so, just ignore it. Otherwise, update the database first, then
+update the total score and update the view (by changing the span tag's class 
+inside td tag) at last. 
+
+At the end of each iteration, call  check_over() function to check if there is
+no more bubble to break, if so, just remind the player and terminate the game.

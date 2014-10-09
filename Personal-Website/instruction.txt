@@ -1,0 +1,9 @@
+step 1:进入portal, 点击webmail, 进入 UTOR mail, 点击option， 然后选择 password, forwarding, autoreply(PFA).
+step 2: 进入PFA,会让你authenticate, 进入新页面后，在下面有一栏是Individual Web Space.
+step 3: 第一次做学校网站， 首先是要申请一个域名，第二天拿到手。
+step 4: 我的域名是  http://individual.utoronto.ca/zhenlan， 格式是相似的。
+step 5：上传网页文件的网址是对应的（这是关键） 我的是  ftp://huzhenla@individual.utoronto.ca
+step 6:重要注意： ftp最好在internet explorer 中打开, click　Page, and then click Open FTP Site in Windows Explorer (这是关键！）
+step 7: 以后把网页文件放到ftp里面， 对应的网站就会显示了。
+
+
